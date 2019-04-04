@@ -3,15 +3,27 @@
  <head>
   <meta charset="utf-8">
   <title>Welcome!</title>
- </head>
- <body background="IMG_20190323_115330.jpg" 
-	style=
-	"
-	background-repeat:no-repeat;
+  <style>
+   body{
+    background-image:url("IMG_20190323_115330.jpg");
+    background-repeat:no-repeat;
 	background-size:100% 100%; 
-	background-attachment: fixed;">
-  <h1 style="color:orange" align="center">Welcome to windy valley!</h1>
+	background-attachment: fixed;
+   }
+   h1{
+    color:orange;
+	text-align:center;
+   }
+   #linktotest{
+    color:yellow;
+	display:block;
+	text-align:center;
+   }
+  </style>
+ </head>
+ <body>
+  <h1>Welcome to windy valley!</h1>
   <br />
-   <big><a href="test.html" style="color:yellow;display:block;text-align:center">Click here!</a></big>
+  <a href="test.html" id="linktotest">Click here!</a>
  </body>
 </html>

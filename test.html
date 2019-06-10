@@ -2,6 +2,13 @@
 <head>
 	<meta charset="utf-8" />
 	<style>
+		body
+		{
+			background-color:rgb(0,255,255);
+			background-repeat:no-repeat;
+			background-size:100% 100%; 
+			background-attachment: fixed;
+		}
 		main
 		{
 			width:100%;
@@ -26,14 +33,14 @@
 		.ellipse:nth-of-type(2)
 		{
 			width:300px;
-			height:150px;
-			border-radius:50% / 100% 100% 0 0;
+			height:300px;
+			border-radius:100% / 75% 100% 25% 0;
 		}
 		.ellipse:nth-of-type(3)
 		{
 			width:300px;
-			height:150px;
-			border-radius:50% / 100% 100% 0 0;
+			height:300px;
+			border-radius:100% / 100% 100% 100% 100%;
 		}
 		.ellipse:nth-of-type(4)
 		{
@@ -52,12 +59,12 @@
 </script>
 <main>
 	<div id="ellipse" class="ellipse"></div>
+	<hr />
 	<div class="ellipse"></div>
+	<hr />
 	<div class="ellipse"></div>
+	<hr />
 	<div class="ellipse"></div>
 </main>
-<script>
-document.getElementById("ellipse").innerHTML="This is an ellipse";
-</script>
 </body>
 </html>

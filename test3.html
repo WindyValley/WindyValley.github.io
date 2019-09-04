@@ -24,17 +24,25 @@
 
         #date {
             position: absolute;
-            top:0px;
-            left:73px;
-            height:20px;
+            top: 0px;
+            left: 73px;
+            height: 20px;
+        }
+
+        #movblock {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
         }
     </style>
     <script src="test3.js"></script>
 </head>
-<body>
+<body onkeydown="keydown(event)">
     <button id="flushdate" type="button">刷新日期</button>
-    <span id="date"></span>
+    <span id="date"><script>document.getElementById("date").innerHTML=Date()</script></span>
     <img id='img1' src="IMG_20190323_115330.jpg" height=300 width=400 />
+    <div id="movblock" ></div>
     <script src="test3_1.js"></script>
 </body>
 </html>
